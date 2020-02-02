@@ -12,6 +12,10 @@
 
     <p>Blah, Blah, Blah</p>
       <a href="https://www.google.com">This is a link to Google!</a>
+
+    {% for link in links %}
+    <a href="{{ link }}">Here is a link!</a>
+    {% endfor %}
     <h3>This is the end of the template!</h3>
   </body>
 </html>
