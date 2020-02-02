@@ -11,7 +11,8 @@
     <title>Guest Book</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"> 
+    <!-- Adds Jinja code to call the static directory and file name. -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
 

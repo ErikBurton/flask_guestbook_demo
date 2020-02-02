@@ -4,7 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Hello There!</h1>'
+    return render_template('index.html')
+
+@app.route('/sign')
+def sign():
+    return render_template('sign.html')
+
 
 @app.route('/home', methods=['GET','POST'])
 def home():
